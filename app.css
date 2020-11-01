@@ -77,16 +77,13 @@ body {
 
 .pricing-plan {
 	border-bottom: 1px solid #e1f1ff;
-	margin-bottom: 20px;
 }
-
 .pricing-plan:last-child {
 	border-bottom: none;
 }
 
 .pricing-img {
 	margin-bottom: 25px;
-	width: 100%;
 	max-width: 100%;
 }
 
@@ -101,7 +98,7 @@ body {
 	color: #016ff9;
 }
 
-.pricing-features-items {
+.pricing-features-item {
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 12px;
@@ -110,7 +107,7 @@ body {
 	border-top: 1px solid #e1f1ff;
 }
 
-.pricing-features-items:last-child {
+.pricing-features-item:last-child {
 	border-bottom: 1px solid #e1f1ff;
 }
 
@@ -144,6 +141,21 @@ body {
 .pricing-button.is-featured:hover, pricing-button.is-featured:focus {
 	background-color: #269aff;
 }
+
+@media (min-width: 900px) {
+	.panel {
+		flex-direction: row;
+	}
+	.pricing-plan {
+	border-bottom: none;
+	border-right: 1px solid #e1f1ff;
+	padding: 25px 50px;
+	}
+	.pricing-plan:last-child {
+		border-right: none;
+	}
+}
+
 
 
 
